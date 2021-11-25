@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App4.MainPage">
+    
+    <!-- Уровни ресурсов-->
+    <ContentPage.Resources>
+        <ResourceDictionary x:Name="resForStart">
+            <Style x:Key="buttonStyle" TargetType="Button">
+                <Setter Property="TextColor" Value="#DEDEDE" />
+                <Setter Property="BackgroundColor" Value="#FA8E38" />
+                <Setter Property="FontSize" Value="Large" />
+                <Setter Property="Margin" Value="5" />
+                <Setter Property="CornerRadius" Value="30" />
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <StackLayout x:Name="Tripoly">
+        <Button x:Name="CreateNoteButton" Style="{StaticResource buttonStyle}" Text="Создать Заметку" Clicked="CreateNoteButton_Clicked"></Button>
+        <Button x:Name="Bb" Text="ABC" Style="{StaticResource buttonStyle}" Clicked="Bb_Clicked"></Button>
+    </StackLayout>
+    
+
+    
+</ContentPage>
